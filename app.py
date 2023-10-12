@@ -39,7 +39,7 @@ while cap.isOpened():
         cv2.imshow("YOLOv8 Inference", resized_frame)
 
         # Break the loop if 'q' is pressed
-        if cv2.waitKey(1) & 0xFF == ord("Q"):
+        if cv2.waitKey(1) & 0xFF == ord("q"):
             break
     else:
         # Break the loop if the end of the video is reached
@@ -51,7 +51,7 @@ cv2.destroyAllWindows()
 
 # import cv2
 
-# cap = cv2.VideoCapture(4)
+# cap = cv2.VideoCapture(0)
 
 # while True:
 #     ret, frame = cap.read()
